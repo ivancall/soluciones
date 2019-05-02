@@ -1,0 +1,115 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block content %}
+  <title>Soluciones Empresariales | Inicia Sesión</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+  <link rel="icon" type="image/png" href="{% static 'admin/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/fonts/iconic/css/material-design-iconic-font.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/util.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/main.css' %}">
+
+
+<!--===============================================================================================-->
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+  <source src="{% static 'admin/fonts/vista.mp4' %}" type="video/mp4">
+</video>
+        
+    <div class="container-login100">
+      <a href="http://31.220.53.211/landing/" class="boton_1" rel="stylesheet">Más acerca de nosotros</a>"      
+        <div class="wrap-login100"><br>
+        <form method="POST">
+          <img rel="icon" type="image/jpeg" src="{% static 'admin/fonts/123.jpeg' %}" class="login100-form-logo">
+          </span>
+          <center>          <br>
+          <div >
+                  {% csrf_token %}
+                    {{ form.as_p }}
+                  <br>
+                  <div class="container-login100-form-btn">
+            <button href="http://31.220.53.211" class="login100-form-btn">
+              Acceder
+            </button>
+          </div>
+            
+          </div>
+
+          
+</center><br>
+          <div class="contact100-form-checkbox">
+            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+            <label class="label-checkbox100" for="ckb1">
+              Recuérdame
+            </label>
+          </div>
+
+          </form>
+
+          <div class="text-center p-t-90">
+            <a class="txt1" href="#">
+              ¿Olvidaste tu contraseña?
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div id="dropDownSelect1"></div>
+  
+<!--===============================================================================================-->
+  <script src="{% static 'admin/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'admin/vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'admin/vendor/bootstrap/js/popper.js' %}"></script>
+  <script src="{% static 'admin/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'admin/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'admin/vendor/daterangepicker/moment.min.js' %}"></script>
+  <script src="{% static 'admin/vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'admin/vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+  <script src="{% static 'admin/js/main.js' %}"></script>
+
+{% block chat %}<!-- END Container -->
+  <!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'iPVtu3rf0v';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->{% endblock %}
+
+</body>
+</html>
+{% endblock content %}
